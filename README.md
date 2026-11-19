@@ -34,7 +34,7 @@ media-sourcing（取料 + 质量分级）
 
 ## 内容加工纪律
 
-写进 `~/.dsh/AGENTS.md`、`~/.claude/CLAUDE.md`、`~/.codex/AGENTS.md`，三个 harness 一致：
+本仓库（与 `docs/` 的 SOP、各 skill 内的交接说明）统一遵循：
 
 - **加工分三级，不许跳**：L1 只切结构不评价 → L2 每条结论带出处并标 `[明确]`/`[推断]` → L3 用 `distill-to-skill` 落盘。
 - **取料 → 提炼的分工**：`media-sourcing` 拿可信材料并交接 `integrity`/`defects`；`distill-to-skill` 产出可执行规则；中间 L1/L2 用对话完成，**不建 skill**（同一模板用过 ≥3 次且反复出错，才考虑合并成一个 `note-structuring`）。
