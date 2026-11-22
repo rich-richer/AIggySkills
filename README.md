@@ -7,6 +7,7 @@
 - [skills/de-ai-flavor](skills/de-ai-flavor/SKILL.md) —— 中文写作降AI味：句子结构、AI套话黑名单、叙事结构三层诊断与修改方法
 - [skills/distill-to-skill](skills/distill-to-skill/SKILL.md) —— 蒸馏成技能：把书/资料/视频或自己的经验，转成可加载、可验收的 Skill（目标句 → 标源 → 三类分流 → 双案例验证 → 落盘）
 - [skills/media-sourcing](skills/media-sourcing/SKILL.md) —— 取料：把网页/视频/音频/PDF/扫描件/图片转成可复核文本，带 integrity 分级与 9 类故障判定（不总结、不蒸馏）
+- [skills/prompt-forge](skills/prompt-forge/SKILL.md) —— 提示词生成器：严格采访 → 选模板 → 组装 → 自检 → 交付六件套；含雄心四维度（速度/高度/深度/范围）与名词换动词判定规则、Claude Code 编程与 `claude -p` 写法
 
 ## 文档
 
