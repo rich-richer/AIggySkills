@@ -6,6 +6,7 @@
 
 - [skills/de-ai-flavor](skills/de-ai-flavor/SKILL.md) —— 中文写作降AI味：句子结构、AI套话黑名单、叙事结构三层诊断与修改方法
 - [skills/distill-to-skill](skills/distill-to-skill/SKILL.md) —— 蒸馏成技能：把书/资料/视频或自己的经验，转成可加载、可验收的 Skill（目标句 → 标源 → 三类分流 → 双案例验证 → 落盘）
+- [skills/image-gen](skills/image-gen/SKILL.md) —— 生图：经 OpenRouter 调用真实图片模型（默认 Seedream 4.5，另有 Nano Banana / GPT-Image / FLUX / Recraft）出图与改图；`--draft` 低价预览、`--ref` 锁构图、`--batch` + `--style` 成套配图
 - [skills/media-sourcing](skills/media-sourcing/SKILL.md) —— 取料：把网页/视频/音频/PDF/扫描件/图片转成可复核文本，带 integrity 分级与 9 类故障判定（不总结、不蒸馏）
 - [skills/prompt-forge](skills/prompt-forge/SKILL.md) —— 提示词生成器：严格采访 → 选模板 → 组装 → 自检 → 交付六件套；含雄心四维度（速度/高度/深度/范围）与名词换动词判定规则、Claude Code 编程与 `claude -p` 写法
 
@@ -46,6 +47,10 @@ media-sourcing（取料 + 质量分级）
 ```bash
 cp -R skills/<name> ~/.agents/skills/
 ```
+
+## 依赖（image-gen 需要）
+
+`python3`，以及自己的 OpenRouter 密钥：放在环境变量 `OPENROUTER_API_KEY`（Claude Code 读 `~/.zshenv`，不是 `~/.zshrc`）。仓库里不含任何密钥。按张计费，Seedream 约 USD 0.04/张，`--draft` 约 USD 0.015/张。
 
 ## 依赖（media-sourcing 需要）
 
